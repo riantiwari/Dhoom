@@ -23,7 +23,7 @@ const BodySection = () => {
   return (
     <div className="body-section">
       <div className="container">
-        <h1>Welcome to Our Dance Team</h1>
+        <h1>Welcome to the UMD Dhoom Team</h1>
         <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
         <button className="btn">Join Us</button>
       </div>
