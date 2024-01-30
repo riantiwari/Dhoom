@@ -4,12 +4,16 @@ import './App.css';
 // Navbar Component
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <nav className="navbar">
+      <div className="container">
+        <h1 className="logo">Dance Team</h1>
+        <ul className="nav-links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Events</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </nav>
   );
 };
@@ -17,9 +21,12 @@ const Navbar = () => {
 // Body Section Component
 const BodySection = () => {
   return (
-    <div>
-      <h1>Welcome to Simple React Framework</h1>
-      <p>This is the body section of your application.</p>
+    <div className="body-section">
+      <div className="container">
+        <h1>Welcome to Our Dance Team</h1>
+        <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
+        <button className="btn">Join Us</button>
+      </div>
     </div>
   );
 };
