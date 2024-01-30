@@ -18,7 +18,7 @@ const Navbar = () => {
 const BodySection = () => {
   return (
     <div>
-      <h1>Welcome to Simple React Framework</h1>
+      <h1>Welcome to the UMD Dhoom Team </h1>
       <p>This is the body section of your application.</p>
     </div>
   );
