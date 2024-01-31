@@ -64,3 +64,47 @@ body {
 .btn:hover {
   background-color: #d41c1c;
 }
+
+/* Contact form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 20px;
+  text-align: left; /* Align form elements to the left */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #e82c2c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d41c1c;
+}
