@@ -54,7 +54,7 @@ const Home = () => {
       <div className="container">
       <h1>Welcome to the UMD Dhoom Team</h1>
       <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
-      <Link to="/join" className="btn">Join Us</Link>
+      <a href = "/contact" class = "btn">Join Us</a>
       </div>
     </div>
     
@@ -107,10 +107,10 @@ const Navbar = () => {
       <div className="container">
         <h1 className="logo">Maryland Dhoom</h1>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
+          <li class = "nav-text"><a href = "/about" class = "link">About</a></li>
+          <li class = "nav-text"><a href = "/events" class = "link">Events</a></li>
+          <li class = "nav-text"><a href = "/contact" class = "link">Contact Us</a></li>
         </ul>
       </div>
     </nav>
