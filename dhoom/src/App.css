@@ -10,6 +10,10 @@ body {
   margin: auto;
 }
 
+.logo {
+  width: 50%;
+  margin: auto;
+}
 .navbar {
   background-color: #e21833;
   color: #fff;
@@ -138,15 +142,15 @@ button:hover {
 .side-menu {
   position: fixed;
   top: 0;
-  left: -250px;
+  right: -250px;
   height: 100%;
   width: 250px;
-  background-color: #333;
-  transition: left 0.3s ease;
+  background-color: #e21833;
+  transition: right 0.3s ease;
 }
 
 .side-menu.open {
-  left: 0;
+  right: 0;
 }
 
 .side-menu ul {
