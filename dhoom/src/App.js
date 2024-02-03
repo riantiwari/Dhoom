@@ -1,44 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 // Home Page Component
 const Home = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Welcome to the UMD Dhoom Team</h1>
-      <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
-      <a href = "/contact" class = "btn">Join Us</a>
+        <h1>Welcome to the UMD Dhoom Team</h1>
+        <p>Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of south-Asian culture to our campus, community, and everywhere we go.</p>
+        <a href="/contact" className="btn">Learn More!</a>
       </div>
     </div>
-    
   );
 };
 
 // About Page Component
 const About = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>About Us</h1>
-      <p>Learn more about the UMD Dhoom Team and our mission.</p>
+        <h1>About Us</h1>
+        <p>Learn more about the UMD Dhoom Team and our mission.</p>
       </div>
     </div>
-    
   );
 };
 
 // Events Page Component
 const Events = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Events</h1>
-      <p>Check out our upcoming events and performances.</p>
+        <h1>Events</h1>
+        <p>Check out our upcoming events and performances.</p>
       </div>
     </div>
-    
   );
 };
 
@@ -84,20 +81,35 @@ const Contact = () => {
 
 // Navbar Component
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
         <h1 className="logo">Maryland Dhoom</h1>
-        <ul className="nav-links">
-          <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
-          <li class = "nav-text"><a href = "/about" class = "link">About</a></li>
-          <li class = "nav-text"><a href = "/events" class = "link">Events</a></li>
-          <li class = "nav-text"><a href = "/contact" class = "link">Contact Us</a></li>
+        <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+      </div>
+      <div className={`side-menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+          <li><Link to="/events" onClick={toggleMenu}>Events</Link></li>
+          <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
         </ul>
       </div>
     </nav>
   );
 };
+
+
 
 // App Component
 const App = () => {
@@ -115,7 +127,5 @@ const App = () => {
     </Router>
   );
 };
-
-
 
 export default App;
