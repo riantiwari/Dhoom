@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import insta_logo from './Assets/insta_logo.png'
 
 // Home Page Component
 const Home = () => {
@@ -105,16 +106,27 @@ const Merch = () => {
 };
 
 // Contact Us Page Component
+// Contact Us Page Component
 const ContactUs = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Contact Us</h1>
-      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <h1>Contact Us</h1>
+        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <ContactForm />
+        <div className="social-links">
+          <h2>Follow us on social media:</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/marylandhoom"><img src="insta_logo" alt="Instagram" /></a></li>
+            <li><a href="mailto:info@example.com"><img src="email_logo.png" alt="Email" /></a></li>
+            <li><a href="https://www.tiktok.com/@example"><img src="" alt="Tiktok" /></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
+
 
 // Navbar Component
 const Navbar = () => {

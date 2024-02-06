@@ -115,3 +115,34 @@ button:hover {
   background-color: #d41c1c;
 }
 
+/* Add this CSS to the end of your App.css file */
+
+.social-links {
+  margin-top: 40px;
+}
+
+.social-links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.social-links ul li a:hover {
+  color: #e82c2c;
+}
