@@ -62,7 +62,7 @@ const Home = () => {
 };
 
 // About Page Component
-const About = () => {
+const MeetTheTeam = () => {
   return (
     <div class = "body-section">
       <div className="container">
@@ -75,7 +75,7 @@ const About = () => {
 };
 
 // Events Page Component
-const Events = () => {
+const History = () => {
   return (
     <div class = "body-section">
       <div className="container">
@@ -88,11 +88,37 @@ const Events = () => {
 };
 
 // Contact Page Component
-const Contact = () => {
+const GetInvolved = () => {
   return (
     <div class = "body-section">
       <div className="container">
-      <h1>Contact Us</h1>
+      <h1>Get Involved</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+    </div>
+    
+  );
+};
+
+// Join Us Page Component
+const JoinUs = () => {
+  return (
+    <div class = "body-section">
+      <div className="container">
+      <h1>Join Us</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+    </div>
+    
+  );
+};
+
+// Merch Page Component
+const Merch = () => {
+  return (
+    <div class = "body-section">
+      <div className="container">
+      <h1>Merch</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
       </div>
     </div>
@@ -108,9 +134,11 @@ const Navbar = () => {
         <h1 className="logo">Maryland Dhoom</h1>
         <ul className="nav-links">
           <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
-          <li class = "nav-text"><a href = "/about" class = "link">About</a></li>
-          <li class = "nav-text"><a href = "/events" class = "link">Events</a></li>
-          <li class = "nav-text"><a href = "/contact" class = "link">Contact Us</a></li>
+          <li class = "nav-text"><a href = "/MeetTheTeam" class = "link">Meet The Team</a></li>
+          <li class = "nav-text"><a href = "/History" class = "link">History</a></li>
+          <li class = "nav-text"><a href = "/GetInvolved" class = "link">Get Involved</a></li>
+          <li class = "nav-text"><a href = "/JoinUs" class = "link">Join Us</a></li>
+          <li class = "nav-text"><a href = "/Merch" class = "link">Merch</a></li>
         </ul>
       </div>
     </nav>
@@ -125,9 +153,11 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
+          <Route path="/History" element={<History />} />
+          <Route path="/GetInvolved" element={<GetInvolved />} />
+          <Route path="/JoinUs" element={<JoinUs />} />
+          <Route path="/Merch" element={<Merch />} />
         </Routes>
       </div>
     </Router>
