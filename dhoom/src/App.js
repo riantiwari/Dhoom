@@ -1,48 +1,3 @@
-/*
-import React from 'react';
-import './App.css';
-
-// Navbar Component
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="container">
-        <h1 className="logo">Maryland Dhoom</h1>
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>About</li>
-          <li>Events</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
-
-// Body Section Component
-const BodySection = () => {
-  return (
-    <div className="body-section">
-      <div className="container">
-        <h1>Welcome to the UMD Dhoom Team</h1>
-        <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
-        <button className="btn">Join Us</button>
-      </div>
-    </div>
-  );
-};
-
-// App Component
-const App = () => {
-  return (
-    <div className="App">
-      <Navbar />
-      <BodySection />
-    </div>
-  );
-};
-
-export default App; */
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -87,16 +42,43 @@ const Events = () => {
   );
 };
 
+// ContactForm component
+const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle form submission, such as sending the data to a server
+    // Example: console.log('Form submitted:', formData);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
 // Contact Page Component
 const Contact = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Contact Us</h1>
-      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <h1>Contact Us</h1>
+        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <ContactForm />
       </div>
     </div>
-    
   );
 };
 
