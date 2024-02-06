@@ -106,7 +106,6 @@ const Merch = () => {
 };
 
 // Contact Us Page Component
-// Contact Us Page Component
 const ContactUs = () => {
   return (
     <div className="body-section">
