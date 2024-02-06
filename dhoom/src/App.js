@@ -74,7 +74,6 @@ const GetInvolved = () => {
   return (
     <div className="body-section">
       <div className="container">
-<<<<<<< HEAD
       <h1>Get Involved</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
       </div>
@@ -103,11 +102,6 @@ const Merch = () => {
       <div className="container">
       <h1>Merch</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-=======
-        <h1>Contact Us</h1>
-        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-        <ContactForm />
->>>>>>> 51c1b9fbda2e031cda5e0f869384698c2b434fa6
       </div>
     </div>
   );
