@@ -10,6 +10,10 @@ body {
   margin: auto;
 }
 
+.logo {
+  width: 50%;
+  margin: auto;
+}
 .navbar {
   background-color: #e21833;
   color: #fff;
@@ -114,3 +118,53 @@ button {
 button:hover {
   background-color: #d41c1c;
 }
+
+/* Add this CSS at the end of your existing styles */
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #e21833;
+  transition: right 0.3s ease;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 20px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #fff; 
+  font-size: 1.2rem;
+}
+

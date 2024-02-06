@@ -1,44 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import dhoom_logo from './Assets/dhoom_logo.jpeg'
 
 // Home Page Component
 const Home = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Welcome to the UMD Dhoom Team</h1>
-      <p>We are a passionate dance team dedicated to spreading joy and creativity through dance.</p>
-      <a href = "/contact" class = "btn">Join Us</a>
+        <h1>Welcome to the UMD Dhoom Team</h1>
+        <p>Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of South-Asian culture to our campus, community, and everywhere we go.</p>
+        <a href="/contact" className="btn">Learn More!</a>
       </div>
     </div>
-    
   );
 };
 
 // About Page Component
 const MeetTheTeam = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>About Us</h1>
-      <p>Learn more about the UMD Dhoom Team and our mission.</p>
+        <h1>About Us</h1>
+        <p>Learn more about the UMD Dhoom Team and our mission.</p>
       </div>
     </div>
-    
   );
 };
 
 // Events Page Component
 const History = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Events</h1>
-      <p>Check out our upcoming events and performances.</p>
+        <h1>Events</h1>
+        <p>Check out our upcoming events and performances.</p>
       </div>
     </div>
-    
   );
 };
 
@@ -109,8 +107,17 @@ const Merch = () => {
 
 // Navbar Component
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
+      <div className={'logo'}>
+        <img src="dhoom_logo" alt="Dhoom Logo"/>
+      </div>
       <div className="container">
         <h1 className="logo">Maryland Dhoom</h1>
         <ul className="nav-links">
@@ -125,6 +132,8 @@ const Navbar = () => {
     </nav>
   );
 };
+
+
 
 // App Component
 const App = () => {
@@ -145,7 +154,4 @@ const App = () => {
   );
 };
 
-
-
 export default App;
-
