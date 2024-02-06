@@ -17,7 +17,7 @@ const Home = () => {
 };
 
 // About Page Component
-const About = () => {
+const MeetTheTeam = () => {
   return (
     <div className="body-section">
       <div className="container">
@@ -29,7 +29,7 @@ const About = () => {
 };
 
 // Events Page Component
-const Events = () => {
+const History = () => {
   return (
     <div className="body-section">
       <div className="container">
@@ -68,13 +68,38 @@ const ContactForm = () => {
 };
 
 // Contact Page Component
-const Contact = () => {
+const GetInvolved = () => {
   return (
     <div className="body-section">
       <div className="container">
-        <h1>Contact Us</h1>
-        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-        <ContactForm />
+      <h1>Get Involved</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+    </div>
+    
+  );
+};
+
+// Join Us Page Component
+const JoinUs = () => {
+  return (
+    <div class = "body-section">
+      <div className="container">
+      <h1>Join Us</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+    </div>
+    
+  );
+};
+
+// Merch Page Component
+const Merch = () => {
+  return (
+    <div class = "body-section">
+      <div className="container">
+      <h1>Merch</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
       </div>
     </div>
   );
@@ -95,18 +120,13 @@ const Navbar = () => {
       </div>
       <div className="container">
         <h1 className="logo">Maryland Dhoom</h1>
-        <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-      <div className={`side-menu ${isOpen ? 'open' : ''}`}>
-        <ul>
-          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-          <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-          <li><Link to="/events" onClick={toggleMenu}>Events</Link></li>
-          <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
+        <ul className="nav-links">
+          <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
+          <li class = "nav-text"><a href = "/MeetTheTeam" class = "link">Meet The Team</a></li>
+          <li class = "nav-text"><a href = "/History" class = "link">History</a></li>
+          <li class = "nav-text"><a href = "/GetInvolved" class = "link">Get Involved</a></li>
+          <li class = "nav-text"><a href = "/JoinUs" class = "link">Join Us</a></li>
+          <li class = "nav-text"><a href = "/Merch" class = "link">Merch</a></li>
         </ul>
       </div>
     </nav>
@@ -123,9 +143,11 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
+          <Route path="/History" element={<History />} />
+          <Route path="/GetInvolved" element={<GetInvolved />} />
+          <Route path="/JoinUs" element={<JoinUs />} />
+          <Route path="/Merch" element={<Merch />} />
         </Routes>
       </div>
     </Router>
