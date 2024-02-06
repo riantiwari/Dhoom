@@ -104,6 +104,18 @@ const Merch = () => {
   );
 };
 
+// Contact Us Page Component
+const ContactUs = () => {
+  return (
+    <div class = "body-section">
+      <div className="container">
+      <h1>Contact Us</h1>
+      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+    </div>
+  );
+};
+
 // Navbar Component
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -123,6 +135,7 @@ const Navbar = () => {
           <li class = "nav-text"><a href = "/GetInvolved" class = "link">Get Involved</a></li>
           <li class = "nav-text"><a href = "/JoinUs" class = "link">Join Us</a></li>
           <li class = "nav-text"><a href = "/Merch" class = "link">Merch</a></li>
+          <li class = "nav-text"><a href = "/ContactUs" class = "link">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -144,6 +157,7 @@ const App = () => {
           <Route path="/GetInvolved" element={<GetInvolved />} />
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/Merch" element={<Merch />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>
