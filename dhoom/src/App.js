@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import dhoom_logo from './Assets/dhoom_logo.jpeg'
 
 // Home Page Component
 const Home = () => {
@@ -115,9 +114,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className={'logo'}>
-        <img src="dhoom_logo" alt="Dhoom Logo"/>
-      </div>
       <div className="container">
         <h1 className="logo">Maryland Dhoom</h1>
         <ul className="nav-links">
