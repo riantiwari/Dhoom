@@ -5,9 +5,25 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.container {
+.container{
   width: 80%;
   margin: auto;
+}
+
+.nav-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding-left: 3%;
+}
+.heading-container {
+  width: 100%;
+  margin: auto;
+}
+
+.logo-container {
+  display: flex; 
+  align-items: center;
 }
 
 .navbar {
@@ -18,6 +34,12 @@ body {
 
 .logo {
   font-size: 2.5rem;
+  margin: 0;
+}
+
+.dhoom-logo {
+  font-size: 2.5rem;
+  width: 50%;
   margin: 0;
 }
 
@@ -38,7 +60,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
 
 .body-section {
   background-color: #f9f9f9;
@@ -146,3 +167,4 @@ button:hover {
 .social-links ul li a:hover {
   color: #e82c2c;
 }
+

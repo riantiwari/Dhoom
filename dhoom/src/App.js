@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import insta_logo from './Assets/insta_logo.png'
+import dhoom_logo from "./Assets/dhoom_logo.png"; 
 
 // Home Page Component
 const Home = () => {
@@ -127,7 +127,6 @@ const ContactUs = () => {
 };
 
 
-// Navbar Component
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -137,17 +136,22 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <h1 className="logo">Maryland Dhoom</h1>
-        <ul className="nav-links">
-          <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
-          <li class = "nav-text"><a href = "/MeetTheTeam" class = "link">Meet The Team</a></li>
-          <li class = "nav-text"><a href = "/History" class = "link">History</a></li>
-          <li class = "nav-text"><a href = "/GetInvolved" class = "link">Get Involved</a></li>
-          <li class = "nav-text"><a href = "/JoinUs" class = "link">Join Us</a></li>
-          <li class = "nav-text"><a href = "/Merch" class = "link">Merch</a></li>
-          <li class = "nav-text"><a href = "/ContactUs" class = "link">Contact Us</a></li>
-        </ul>
+      <div className='nav-container'>
+        <div className="logo-container">
+        <img src={dhoom_logo} alt="dhoom" className="dhoom-logo"/>
+          </div>
+        <div className="heading-container">
+          <h1 className="logo">Maryland Dhoom</h1>
+          <ul className="nav-links">
+            <li class="nav-text"><a href="/" class="link">Home</a></li>
+            <li class="nav-text"><a href="/MeetTheTeam" class="link">Meet The Team</a></li>
+            <li class="nav-text"><a href="/History" class="link">History</a></li>
+            <li class="nav-text"><a href="/GetInvolved" class="link">Get Involved</a></li>
+            <li class="nav-text"><a href="/JoinUs" class="link">Join Us</a></li>
+            <li class="nav-text"><a href="/Merch" class="link">Merch</a></li>
+            <li class="nav-text"><a href="/ContactUs" class="link">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
