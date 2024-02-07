@@ -117,7 +117,7 @@ const ContactUs = () => {
         <div className="social-links">
           <h2>Follow us on social media:</h2>
           <ul>
-            <li><a href="https://www.instagram.com/marylandhoom"><img src="insta_logo" alt="Instagram" /></a></li>
+            <li><a href="https://www.instagram.com/marylandhoom"><img src = "insta_logo.png"></img></a></li>
             <li><a href="mailto:marylandhoom@gmail.com"><img src="email_logo.png" alt="Email" /></a></li>
             <li><a href="https://www.tiktok.com/@marylandhoom"><img src="" alt="Tiktok" /></a></li>
           </ul>
