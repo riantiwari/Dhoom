@@ -132,6 +132,8 @@ button:hover {
   margin: 0;
 }
 
+
+
 .social-links ul li {
   display: inline-block;
   margin-right: 10px;
@@ -145,4 +147,25 @@ button:hover {
 
 .social-links ul li a:hover {
   color: #e82c2c;
+}
+
+.icon_container {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.instaicon{
+  width: 7.5vh;
+  padding-right: 30px;
+}
+
+.mailicon {
+  width: 7.5vh;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+.tiktokicon {
+  width: 7.5vh;
 }

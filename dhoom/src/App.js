@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import insta_logo from './Assets/insta_logo.png'
+import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
+import tiktok_logo from './Assets/tiktok-logo.jpg'
+//<li><img src="insta_logo.png" href="https://www.instagram.com/marylandhoom" /></li>
+            //<li><a href="mailto:marylandhoom@gmail.com"><img src="email_logo.png" alt="Email" /></a></li>
+            //<li><a href="https://www.tiktok.com/@marylandhoom"><img src="" alt="Tiktok" /></a></li>
 
 // Home Page Component
 const Home = () => {
@@ -115,11 +120,11 @@ const ContactUs = () => {
         <ContactForm />
         <div className="social-links">
           <h2>Follow us on social media:</h2>
-          <ul>
-            <li><a href="https://www.instagram.com/marylandhoom"><img src="insta_logo" alt="Instagram" /></a></li>
-            <li><a href="mailto:marylandhoom@gmail.com"><img src="email_logo.png" alt="Email" /></a></li>
-            <li><a href="https://www.tiktok.com/@marylandhoom"><img src="" alt="Tiktok" /></a></li>
-          </ul>
+            <div class = "icon_container">
+              <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
+              <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
+              <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
+            </div>
         </div>
       </div>
     </div>
