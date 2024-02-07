@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import dhoom_logo from './Assets/dhoom_logo.jpeg'
+import insta_logo from './Assets/insta_logo.png'
+import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
+import tiktok_logo from './Assets/tiktok-logo.jpg'
+import dhoom_logo from "./Assets/dhoom_logo.png"; 
 
 // Home Page Component
 const Home = () => {
@@ -108,16 +111,25 @@ const Merch = () => {
 // Contact Us Page Component
 const ContactUs = () => {
   return (
-    <div class = "body-section">
+    <div className="body-section">
       <div className="container">
-      <h1>Contact Us</h1>
-      <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <h1>Contact Us</h1>
+        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+        <ContactForm />
+        <div className="social-links">
+          <h2>Follow us on social media:</h2>
+            <div class = "icon_container">
+              <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
+              <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
+              <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
+            </div>
+        </div>
       </div>
     </div>
   );
 };
 
-// Navbar Component
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -127,20 +139,22 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className={'logo'}>
-        <img src="dhoom_logo" alt="Dhoom Logo"/>
-      </div>
-      <div className="container">
-        <h1 className="logo">Maryland Dhoom</h1>
-        <ul className="nav-links">
-          <li class = "nav-text"><a href = "/" class = "link">Home</a></li>
-          <li class = "nav-text"><a href = "/MeetTheTeam" class = "link">Meet The Team</a></li>
-          <li class = "nav-text"><a href = "/History" class = "link">History</a></li>
-          <li class = "nav-text"><a href = "/GetInvolved" class = "link">Get Involved</a></li>
-          <li class = "nav-text"><a href = "/JoinUs" class = "link">Join Us</a></li>
-          <li class = "nav-text"><a href = "/Merch" class = "link">Merch</a></li>
-          <li class = "nav-text"><a href = "/ContactUs" class = "link">Contact Us</a></li>
-        </ul>
+      <div className='nav-container'>
+        <div className="logo-container">
+        <img src={dhoom_logo} alt="dhoom" className="dhoom-logo"/>
+          </div>
+        <div className="heading-container">
+          <h1 className="logo">Maryland Dhoom</h1>
+          <ul className="nav-links">
+            <li class="nav-text"><a href="/" class="link">Home</a></li>
+            <li class="nav-text"><a href="/MeetTheTeam" class="link">Meet The Team</a></li>
+            <li class="nav-text"><a href="/History" class="link">History</a></li>
+            <li class="nav-text"><a href="/GetInvolved" class="link">Get Involved</a></li>
+            <li class="nav-text"><a href="/JoinUs" class="link">Join Us</a></li>
+            <li class="nav-text"><a href="/Merch" class="link">Merch</a></li>
+            <li class="nav-text"><a href="/ContactUs" class="link">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

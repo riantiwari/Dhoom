@@ -5,15 +5,27 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.container {
+.container{
   width: 80%;
   margin: auto;
 }
 
-.logo {
-  width: 50%;
+.nav-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding-left: 3%;
+}
+.heading-container {
+  width: 100%;
   margin: auto;
 }
+
+.logo-container {
+  display: flex; 
+  align-items: center;
+}
+
 .navbar {
   background-color: #e21833;
   color: #fff;
@@ -22,6 +34,12 @@ body {
 
 .logo {
   font-size: 2.5rem;
+  margin: 0;
+}
+
+.dhoom-logo {
+  font-size: 2.5rem;
+  width: 50%;
   margin: 0;
 }
 
@@ -42,7 +60,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
 
 .body-section {
   background-color: #f9f9f9;
@@ -119,52 +136,58 @@ button:hover {
   background-color: #d41c1c;
 }
 
-/* Add this CSS at the end of your existing styles */
+/* Add this CSS to the end of your App.css file */
 
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 1000;
-  position: absolute;
-  top: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
+.social-links {
+  margin-top: 40px;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-  transition: transform 0.3s, opacity 0.3s;
+.social-links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  height: 100%;
-  width: 250px;
-  background-color: #e21833;
-  transition: right 0.3s ease;
-}
-
-.side-menu.open {
-  right: 0;
-}
-
-.side-menu ul {
+.social-links ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-.side-menu ul li {
-  padding: 20px;
+
+
+.social-links ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.side-menu ul li a {
+.social-links ul li a {
   text-decoration: none;
-  color: #fff; 
+  color: #333;
   font-size: 1.2rem;
+}
+
+.social-links ul li a:hover {
+  color: #e82c2c;
+}
+
+.icon_container {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.instaicon{
+  width: 7.5vh;
+  padding-right: 3vw;
+}
+
+.mailicon {
+  width: 7.5vh;
+  padding-right: 3vw;
+  padding-bottom: 5px;
+}
+
+.tiktokicon {
+  width: 7.5vh;
 }
 
