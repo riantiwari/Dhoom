@@ -191,3 +191,73 @@ button:hover {
   width: 7.5vh;
 }
 
+.meetTeamMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.memberSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #f6f8fa, #ffffff);
+  border-radius: 20px;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.memberSection:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.memberSection h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.memberSection p {
+  font-size: 14px;
+  color: #657786;
+  margin: 5px 0;
+}
+
+
+.personInfo {
+  width: 100%;
+  margin: auto;
+}
+
+.personName {
+  font-size: 40px;
+}
+
+.personBlurb {
+  font-size: 20px;
+}
+
+.meetTeamSide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+

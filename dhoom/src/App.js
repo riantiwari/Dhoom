@@ -24,8 +24,54 @@ const MeetTheTeam = () => {
   return (
     <div className="body-section">
       <div className="container">
-        <h1>About Us</h1>
+        <h1>Meet The Team</h1>
         <p>Learn more about the UMD Dhoom Team and our mission.</p>
+      </div>
+      <div className='meetTeamMain'>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Rian Tiwari</div>
+            <div className='personBlurb'>Hello, my name is Rian Tiwari and this is a bit about me.</div>
+          </div>
+        </div>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Rohith Koneru</div>
+            <div className='personBlurb'>Hello, my name is Rohith Koneru and this is a bit about me.</div>
+          </div>
+        </div>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Aakash Kalmady</div>
+            <div className='personBlurb'>Hello, my name is Aakash Kalmady and this is a bit about me.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className='meetTeamSide'>
+        <div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 1
+        </div>
+        <div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 2
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 3
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 4
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 5
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 6
+        </div>
       </div>
     </div>
   );
