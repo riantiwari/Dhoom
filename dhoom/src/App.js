@@ -30,12 +30,15 @@ const Home = () => {
             <img src = {userPlaceHolder} />
           </div>
         </div>
-        <div className="mission-header">
-          <h2>Our Mission</h2>
+        <div class = "content">
+          <div className="mission-header">
+            <h2>Our Mission</h2>
+          </div>
+          <p>
+            Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
+          </p>
         </div>
-        <p>
-          Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
-        </p>
+        
         <a href="/JoinUs" className="btn">Learn More!</a>
 
       </div>
@@ -178,20 +181,20 @@ const JoinUs = () => {
       <div className='container'>
         We hold auditions for the team in the fall where we teach a short 30 second routine and then people interested in trying out do so by demonstrating that piece in front of the captains. We also offer a optional piece to complement your audition in order to showcase certain strengths you may have as a dancer. No dance experience is necessary to tryout. Fall 2022: Information about our Learning Day Fall 2022 will be released soon! Keep up with our Instagram (@marylandhoom) for the latest updates!
       </div>
-      <div className="body-section">
-        <div className="container">
-          <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-          <ContactForm />
-          <div className="social-links">
-            <h2>Follow us on social media:</h2>
-              <div class = "icon_container">
-                <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
-                <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
-                <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
-              </div>
-          </div>
-        </div>
-    </div>
+    
+      <div className="container">
+        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+         <ContactForm />
+         <div className="social-links">
+           <h2>Follow us on social media:</h2>
+             <div class = "icon_container">
+               <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
+               <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
+               <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
+             </div>
+         </div>
+       </div>
+   
     </div>
     
   );

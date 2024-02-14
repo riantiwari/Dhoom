@@ -310,8 +310,9 @@ button:hover {
   background-color: #c70039;
 }
 
-.content { 
-  margin-bottom: 300px;
+.content {
+  display: block;
+  
 }
 
 .left-content {
