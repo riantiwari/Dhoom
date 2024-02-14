@@ -14,7 +14,7 @@ const Home = () => {
       <div className="container">
         <h1>Welcome to the UMD Dhoom Team</h1>
         <p>Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of South-Asian culture to our campus, community, and everywhere we go.</p>
-        <a href="/contact" className="btn">Learn More!</a>
+        <a href="/ContactUs" className="btn">Learn More!</a>
       </div>
     </div>
   );
@@ -25,8 +25,54 @@ const MeetTheTeam = () => {
   return (
     <div className="body-section">
       <div className="container">
-        <h1>About Us</h1>
+        <h1>Meet The Team</h1>
         <p>Learn more about the UMD Dhoom Team and our mission.</p>
+      </div>
+      <div className='meetTeamMain'>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Rian Tiwari</div>
+            <div className='personBlurb'>Hello, my name is Rian Tiwari and this is a bit about me.</div>
+          </div>
+        </div>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Rohith Koneru</div>
+            <div className='personBlurb'>Hello, my name is Rohith Koneru and this is a bit about me.</div>
+          </div>
+        </div>
+        <div className='memberSection'>
+          <img src={dhoom_logo}></img>
+          <div className='personInfo'>
+            <div className='personName'>Aakash Kalmady</div>
+            <div className='personBlurb'>Hello, my name is Aakash Kalmady and this is a bit about me.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className='meetTeamSide'>
+        <div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 1
+        </div>
+        <div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 2
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 3
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 4
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 5
+        </div><div className="grid-item">
+          <img src={dhoom_logo}></img>
+          Block 6
+        </div>
       </div>
     </div>
   );
