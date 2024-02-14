@@ -5,6 +5,7 @@ import insta_logo from './Assets/insta_logo.png'
 import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
 import tiktok_logo from './Assets/tiktok-logo.jpg'
 import dhoom_logo from "./Assets/dhoom_logo.png"; 
+import userPlaceHolder from './Assets/userPlaceHolder.png';
 
 
 // Home Page Component
@@ -30,21 +31,21 @@ const MeetTheTeam = () => {
       </div>
       <div className='meetTeamMain'>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Rian Tiwari</div>
             <div className='personBlurb'>Hello, my name is Rian Tiwari and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Rohith Koneru</div>
             <div className='personBlurb'>Hello, my name is Rohith Koneru and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Aakash Kalmady</div>
             <div className='personBlurb'>Hello, my name is Aakash Kalmady and this is a bit about me.</div>
@@ -54,24 +55,36 @@ const MeetTheTeam = () => {
 
       <div className='meetTeamSide'>
         <div className="grid-item">
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
           Block 1
+          </div>
         </div>
         <div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 2
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 2
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 3
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 3
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 4
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 4
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 5
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 5
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 6
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 6
+          </div>
         </div>
       </div>
     </div>
@@ -137,6 +150,10 @@ const JoinUs = () => {
       <div className="container">
       <h1>Join Us</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+      </div>
+
+      <div className='container'>
+        We hold auditions for the team in the fall where we teach a short 30 second routine and then people interested in trying out do so by demonstrating that piece in front of the captains. We also offer a optional piece to complement your audition in order to showcase certain strengths you may have as a dancer. No dance experience is necessary to tryout. Fall 2022: Information about our Learning Day Fall 2022 will be released soon! Keep up with our Instagram (@marylandhoom) for the latest updates!
       </div>
     </div>
     
