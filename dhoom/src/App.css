@@ -310,7 +310,10 @@ button:hover {
   background-color: #c70039;
 }
 
-
+.content {
+  display: block;
+  
+}
 
 .left-content {
   width: 70%; /* Adjust the width as needed */
