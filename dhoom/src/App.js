@@ -30,12 +30,15 @@ const Home = () => {
             <img src = {userPlaceHolder} />
           </div>
         </div>
-        <div className="mission-header">
-          <h2>Our Mission</h2>
+        <div class = "content">
+          <div className="mission-header">
+            <h2>Our Mission</h2>
+          </div>
+          <p>
+            Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
+          </p>
         </div>
-        <p>
-          Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
-        </p>
+        
         <a href="/JoinUs" className="btn">Learn More!</a>
 
       </div>
