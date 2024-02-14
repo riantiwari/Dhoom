@@ -4,21 +4,41 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import insta_logo from './Assets/insta_logo.png'
 import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
 import tiktok_logo from './Assets/tiktok-logo.jpg'
-import dhoom_logo from "./Assets/dhoom_logo.png"; 
+import dhoom_logo from "./Assets/dhoom_logo.png"
+import placeholder from "./Assets/placeholder.webp"
 
 
+// Home Page Component
 // Home Page Component
 const Home = () => {
   return (
     <div className="body-section">
       <div className="container">
-        <h1>Welcome to the UMD Dhoom Team</h1>
-        <p>Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of South-Asian culture to our campus, community, and everywhere we go.</p>
+        <div class="general-header">
+          <h1>Welcome to the UMD Dhoom Team</h1>
+        </div>
+        <div class="content">
+          <div class="left-content">
+            <p>
+              Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of South-Asian culture to our campus, community, and everywhere we go.
+            </p>
+          </div>
+          <div class="right-content">
+            <img src = {placeholder} />
+          </div>
+        </div>
+        <div className="mission-header">
+          <h2>Our Mission</h2>
+        </div>
+        <p>
+          Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
+        </p>
         <a href="/ContactUs" className="btn">Learn More!</a>
       </div>
     </div>
   );
 };
+
 
 // About Page Component
 const MeetTheTeam = () => {
