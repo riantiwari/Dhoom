@@ -14,7 +14,7 @@ const Home = () => {
       <div className="container">
         <h1>Welcome to the UMD Dhoom Team</h1>
         <p>Maryland Dhoom is a South Asian fusion competing dance team. We include dance styles ranging from Bollywood, Bhangra, and Indian Classical to Hip Hop, Jazz, Modern, and much more. We strive to encompass various styles of cultural dances and spread awareness of South-Asian culture to our campus, community, and everywhere we go.</p>
-        <a href="/contact" className="btn">Learn More!</a>
+        <a href="/ContactUs" className="btn">Learn More!</a>
       </div>
     </div>
   );
