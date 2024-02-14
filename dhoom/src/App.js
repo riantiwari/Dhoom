@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import insta_logo from './Assets/insta_logo.png'
 import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
 import tiktok_logo from './Assets/tiktok-logo.jpg'
+
 import dhoom_logo from "./Assets/dhoom_logo.png"
-import placeholder from "./Assets/placeholder.webp"
+
+import userPlaceHolder from './Assets/userPlaceHolder.png';
 
 
 // Home Page Component
@@ -14,6 +16,7 @@ const Home = () => {
   return (
     <div className="body-section">
       <div className="container">
+
         <div class="general-header">
           <h1>Welcome to the UMD Dhoom Team</h1>
         </div>
@@ -34,6 +37,7 @@ const Home = () => {
           Maryland Dhoom, the premier South-Asian fusion dance team at UMCP, strives to show our love for South Asian culture and our University of Maryland pride by competing around the country against fusion teams from various colleges. We aim to share and spread our passion for South Asian dance and show our appreciation for culture everywhere we go!
         </p>
         <a href="/ContactUs" className="btn">Learn More!</a>
+
       </div>
     </div>
   );
@@ -50,21 +54,21 @@ const MeetTheTeam = () => {
       </div>
       <div className='meetTeamMain'>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Rian Tiwari</div>
             <div className='personBlurb'>Hello, my name is Rian Tiwari and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Rohith Koneru</div>
             <div className='personBlurb'>Hello, my name is Rohith Koneru and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
           <div className='personInfo'>
             <div className='personName'>Aakash Kalmady</div>
             <div className='personBlurb'>Hello, my name is Aakash Kalmady and this is a bit about me.</div>
@@ -74,24 +78,36 @@ const MeetTheTeam = () => {
 
       <div className='meetTeamSide'>
         <div className="grid-item">
-          <img src={dhoom_logo}></img>
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
           Block 1
+          </div>
         </div>
         <div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 2
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 2
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 3
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 3
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 4
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 4
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 5
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 5
+          </div>
         </div><div className="grid-item">
-          <img src={dhoom_logo}></img>
-          Block 6
+          <img src={userPlaceHolder}></img>
+          <div className='sideTeamNames'>
+            Block 6
+          </div>
         </div>
       </div>
     </div>
@@ -158,6 +174,24 @@ const JoinUs = () => {
       <h1>Join Us</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
       </div>
+
+      <div className='container'>
+        We hold auditions for the team in the fall where we teach a short 30 second routine and then people interested in trying out do so by demonstrating that piece in front of the captains. We also offer a optional piece to complement your audition in order to showcase certain strengths you may have as a dancer. No dance experience is necessary to tryout. Fall 2022: Information about our Learning Day Fall 2022 will be released soon! Keep up with our Instagram (@marylandhoom) for the latest updates!
+      </div>
+      <div className="body-section">
+        <div className="container">
+          <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
+          <ContactForm />
+          <div className="social-links">
+            <h2>Follow us on social media:</h2>
+              <div class = "icon_container">
+                <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
+                <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
+                <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
+              </div>
+          </div>
+        </div>
+    </div>
     </div>
     
   );
@@ -170,27 +204,6 @@ const Merch = () => {
       <div className="container">
       <h1>Merch</h1>
       <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-      </div>
-    </div>
-  );
-};
-
-// Contact Us Page Component
-const ContactUs = () => {
-  return (
-    <div className="body-section">
-      <div className="container">
-        <h1>Contact Us</h1>
-        <p>Get in touch with the UMD Dhoom Team for inquiries and collaborations.</p>
-        <ContactForm />
-        <div className="social-links">
-          <h2>Follow us on social media:</h2>
-            <div class = "icon_container">
-              <img class = "instaicon" src= {insta_logo} href="https://www.instagram.com/marylandhoom" />
-              <a href="mailto:marylandhoom@gmail.com"><img class = "mailicon" src= {gmail_logo} /></a>
-              <a href="https://www.tiktok.com/@marylandhoom"><img class = "tiktokicon" src= {tiktok_logo} /></a>
-            </div>
-        </div>
       </div>
     </div>
   );
@@ -219,7 +232,6 @@ const Navbar = () => {
             <li class="nav-text"><a href="/GetInvolved" class="link">Get Involved</a></li>
             <li class="nav-text"><a href="/JoinUs" class="link">Join Us</a></li>
             <li class="nav-text"><a href="/Merch" class="link">Merch</a></li>
-            <li class="nav-text"><a href="/ContactUs" class="link">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -242,7 +254,7 @@ const App = () => {
           <Route path="/GetInvolved" element={<GetInvolved />} />
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/Merch" element={<Merch />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
+          {/* <Route path="/ContactUs" element={<ContactUs />} /> */}
         </Routes>
       </div>
     </Router>

@@ -202,7 +202,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 20px; 
-  padding: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
 }
 
 .memberSection {
@@ -242,17 +244,20 @@ button:hover {
 
 .personName {
   font-size: 40px;
+  font-family: 'Montserrat';
 }
 
 .personBlurb {
   font-size: 20px;
+  font-family: 'Montserrat';
 }
 
 .meetTeamSide {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  padding: 20px;
+  padding-right: 100px;
+  padding-left: 100px
 }
 
 .grid-item {
@@ -322,4 +327,9 @@ button:hover {
 
 .right-content img {
   width: 90%; /* Ensure the image takes up the entire width of its container */
+}
+
+.sideTeamNames {
+  font-size: 20px;
+  font-family: 'Montserrat';
 }
