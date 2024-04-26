@@ -56,22 +56,22 @@ const MeetTheTeam = () => {
         <div className='memberSection'>
           <img src={userPlaceHolder}></img>
           <div className='personInfo'>
-            <div className='personName'>Rian Tiwari</div>
-            <div className='personBlurb'>Hello, my name is Rian Tiwari and this is a bit about me.</div>
+            <div className='personName'>First Last</div>
+            <div className='personBlurb'>Hello, my name is First Last and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
           <img src={userPlaceHolder}></img>
           <div className='personInfo'>
-            <div className='personName'>Rohith Koneru</div>
-            <div className='personBlurb'>Hello, my name is Rohith Koneru and this is a bit about me.</div>
+            <div className='personName'>First Last</div>
+            <div className='personBlurb'>Hello, my name is First Last and this is a bit about me.</div>
           </div>
         </div>
         <div className='memberSection'>
           <img src={userPlaceHolder}></img>
           <div className='personInfo'>
-            <div className='personName'>Aakash Kalmady</div>
-            <div className='personBlurb'>Hello, my name is Aakash Kalmady and this is a bit about me.</div>
+            <div className='personName'>First Last</div>
+            <div className='personBlurb'>Hello, my name is First Last and this is a bit about me.</div>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@ const MeetTheTeam = () => {
 };
 
 // Events Page Component
-const History = () => {
+const Events = () => {
   return (
     <div className="body-section">
       <div className="container">
@@ -228,7 +228,7 @@ const Navbar = () => {
           <ul className="nav-links">
             <li class="nav-text"><a href="/" class="link">Home</a></li>
             <li class="nav-text"><a href="/MeetTheTeam" class="link">Meet The Team</a></li>
-            <li class="nav-text"><a href="/History" class="link">History</a></li>
+            <li class="nav-text"><a href="/Events" class="link">Events</a></li>
             <li class="nav-text"><a href="/GetInvolved" class="link">Get Involved</a></li>
             <li class="nav-text"><a href="/Merch" class="link">Merch</a></li>
             <li class="nav-text"><a href="/JoinUs" class="link">Join Us</a></li>
@@ -250,7 +250,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-          <Route path="/History" element={<History />} />
+          <Route path="/Events" element={<Events />} />
           <Route path="/GetInvolved" element={<GetInvolved />} />
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/Merch" element={<Merch />} />
