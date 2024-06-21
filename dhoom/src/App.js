@@ -18,7 +18,7 @@ const Home = () => {
       <div className="container">
 
         <div class="general-header">
-          <h1>Welcome to the UMD Dhoom Team</h1>
+          <h1>Welcome to Maryland Dhoom, the Uniersity of Maryland's premiere Bollywood-Fusion Dance Team!</h1>
         </div>
         <div class="content">
           <div class="left-content">
@@ -50,7 +50,7 @@ const MeetTheTeam = () => {
     <div className="body-section">
       <div className="container">
         <h1>Meet The Team</h1>
-        <p>Learn more about the UMD Dhoom Team and our mission.</p>
+        <p>Learn more about Maryland Dhoom and our mission.</p>
       </div>
       <div className='meetTeamMain'>
         <div className='memberSection'>
