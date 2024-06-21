@@ -5,7 +5,7 @@ import insta_logo from './Assets/insta_logo.png'
 import gmail_logo from './Assets/Gmail_icon_(2020).svg.webp'
 import tiktok_logo from './Assets/tiktok-logo.jpg'
 
-import dhoom_logo from "./Assets/dhoom_logo.png"
+import dhoom_logo from "./Assets/dhoom_logoOLD.png"
 
 import userPlaceHolder from './Assets/userPlaceHolder.png';
 
@@ -18,7 +18,7 @@ const Home = () => {
       <div className="container">
 
         <div class="general-header">
-          <h1>Welcome to Maryland Dhoom, the Uniersity of Maryland's premiere Bollywood-Fusion Dance Team!</h1>
+          <h1>Welcome to Maryland Dhoom, the University of Maryland's premiere Bollywood-Fusion Dance Team!</h1>
         </div>
         <div class="content">
           <div class="left-content">
